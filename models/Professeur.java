@@ -8,7 +8,7 @@ public class Professeur {
     public Professeur(String prenom, String nom) {
         this.prenom = prenom;
         this.nom = nom;
-        this.modulesEnseignes = tab[0]; // j'ai pas compris la notion avec le type de modulesEnseignes mais j'ai compris qui fallait que je fasse un tableau de taille 0
+        this.modulesEnseignes = tab[0]; // j'ai pas compris la notion avec le type de modulesEnseignes mais j'ai compris qu'il fallait que je fasse un tableau de taille 0
 
     }
 
