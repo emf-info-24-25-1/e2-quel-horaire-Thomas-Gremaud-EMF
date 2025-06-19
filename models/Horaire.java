@@ -1,9 +1,11 @@
 public class Horaire {
     public static final int NBRE_DE_BLOCS = 6;
+    //MR blocs est final
     private Bloc[] blocs;
 
     public Horaire() {
         this.blocs = blocs;
+        //MR Il faut créer le tableau et insérer le nombre de blocs (6)
     }
 
     public boolean planifier(Moduleinfo[] modules, Professeur[] profs) {

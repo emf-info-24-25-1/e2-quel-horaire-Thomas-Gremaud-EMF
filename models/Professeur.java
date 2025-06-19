@@ -3,6 +3,7 @@ import java.util.Set;
 public class Professeur {
     private final String nom;
     private final String prenom;
+    //MR Le tableau ne doit pas être final car on va le recréer à chaque fois que l'on ajoute un module
     private final ModuleInfo[] modulesEnseignes;
 
     public Professeur(String prenom, String nom) {
@@ -15,6 +16,7 @@ public class Professeur {
     public boolean enseigneCeModule(String nomDuModule) {
 boolean reussi = false;
 for (int i = 0; i < modulesEnseignes.length; i++) {
+    //MR Il faut vérifier si le nomDuModule est dans le tableau
     if (modulesEnseignes[i] == null) {
         return true;
     }
@@ -54,6 +56,7 @@ for (int i = 0; i < modulesEnseignes.length; i++) {
 
     @Override
     public String toString() {
+        //MR Il manque la fonction uppercase
         return prenom + " " + nom;
     }
 

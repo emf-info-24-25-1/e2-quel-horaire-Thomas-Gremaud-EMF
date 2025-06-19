@@ -44,6 +44,7 @@ public class Bloc {
         Boolean reussi = false;
         for (int i = 0; i < modules.length; i++) {
             if (module[i] == modules) {
+                //MR Oui, mais je préfère que le return soit dessous
                 return reussi = true;
             }
             break;
